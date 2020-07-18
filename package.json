@@ -1,0 +1,25 @@
+{
+  "name": "CrazyShopping",
+  "version": "1.0.0",
+  "description": "Projet Personnel - Shoppings 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEVERECLICK-dev/CrazyShopping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SEVERECLICK-dev/CrazyShopping/issues"
+  },
+  "homepage": "https://github.com/SEVERECLICK-dev/CrazyShopping#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1"
+  }
+}
