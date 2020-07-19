@@ -9673,15 +9673,18 @@ body {
   margin: 0;
 }
 
+/* ----- Nav Bar ----- */
 .container-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  height: 100px;
   background-color: white;
 }
 
 .container-nav .navLeft {
   padding: 1em 0;
+  margin-right: 10em;
 }
 
 .container-nav .navLeft .logo {
@@ -9701,11 +9704,11 @@ body {
 }
 
 .container-nav .navRight .nav-link:hover {
-  color: lightcoral;
+  color: red;
 }
 
 .container-nav .navRight .nav-link:hover:after {
-  transform: scaleX(1);
+  transform: scaleY(1);
 }
 
 .container-nav .navRight .nav-link::after {
@@ -9713,11 +9716,93 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 3px;
+  transform: scaleY(0);
   background-color: dodgerblue;
-  transform: scaleX(0);
-  transition: transform 0.3s;
+  transition: transform 0.2s;
+}
+
+.container-nav .navRightButtons {
+  display: flex;
+  margin-left: 5em;
+}
+
+.container-nav .navRightButtons .navSearch {
+  position: relative;
+}
+
+.container-nav .navRightButtons .navSearch input {
+  border: 1px solid #8d8d8d;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+}
+
+.container-nav .navRightButtons .navSearch .fa-search {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.container-nav .navRightButtons .favorite {
+  margin-left: 1em;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #8d8d8d;
+  color: red;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.container-nav .navRightButtons .favorite:hover {
+  color: white;
+  background-color: black;
+}
+
+.container-nav .navRightButtons .shopping {
+  margin-left: 1em;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #8d8d8d;
+  color: #007bff;
+  font-size: 19px;
+  cursor: pointer;
+  outline: none;
+}
+
+.container-nav .navRightButtons .shopping:hover {
+  color: white;
+  background-color: black;
+}
+
+.container-nav .navRightButtons .buttonSign {
+  margin-left: 1em;
+  margin-top: 0.2em;
+}
+
+.container-nav .navRightButtons .buttonSign .btn {
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-left: 0.5em;
+}
+
+.container-nav .navRightButtons .buttonSign .btn:hover {
+  background-color: black;
+}
+
+.modal-body input {
+  margin-left: 1em;
+  outline: none;
 }
 
 .container-home {

@@ -1,0 +1,50 @@
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7ecff;
+    .container-home-banner {
+        margin-right: 100px;
+    }
+    .container-home-text {
+        h1 {
+            white-space: pre-line;
+            font-size: 100px;
+            font-weight: 700;
+            font-family: "Playfair Display", serif;
+        }
+        span {
+            font-family: "Yellowtail", cursive;
+            color: #2577fd;
+            font-size: 50px;
+        }
+        p {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-size: 25px;
+            line-height: 1.2;
+            font-weight: 300;
+            margin-top: 1em;
+            padding-bottom: 2em;
+        }
+        a {
+            background: #2577fd;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 0;
+            padding: 14px 34px;
+            border-radius: 25px;
+            margin: 10px;
+            transition: color 0.4s linear;
+            border: 0;
+            margin: 0;
+            text-decoration: none;
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}

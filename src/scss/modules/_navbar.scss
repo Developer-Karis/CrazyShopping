@@ -6,13 +6,17 @@ body {
     margin: 0;
 }
 
+/* ----- Nav Bar ----- */
+
 .container-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    height: 100px;
     background-color: white;
     .navLeft {
         padding: 1em 0;
+        margin-right: 10em;
         .logo {
             font-family: "Fredoka One", cursive;
             font-size: 25px;
@@ -26,9 +30,9 @@ body {
             text-decoration: none;
             position: relative;
             &:hover {
-                color: lightcoral;
+                color: red;
                 &:after {
-                    transform: scaleX(1);
+                    transform: scaleY(1);
                 }
             }
             &::after {
@@ -36,63 +40,85 @@ body {
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                right: 0;
                 width: 100%;
                 height: 3px;
+                transform: scaleY(0);
                 background-color: dodgerblue;
-                transform: scaleX(0);
-                transition: transform 0.3s;
+                transition: transform 0.2s;
+            }
+        }
+    }
+    .navRightButtons {
+        display: flex;
+        margin-left: 5em;
+        .navSearch {
+            position: relative;
+            input {
+                border: 1px solid rgb(141, 141, 141);
+                border-radius: 30px;
+                padding: 10px 20px;
+                width: 100%;
+                outline: none;
+            }
+            .fa-search {
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                cursor: pointer;
+            }
+        }
+        .favorite {
+            margin-left: 1em;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid rgb(141, 141, 141);
+            color: red;
+            font-size: 19px;
+            cursor: pointer;
+            &:hover {
+                color: white;
+                background-color: black;
+            }
+        }
+        .shopping {
+            margin-left: 1em;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid rgb(141, 141, 141);
+            color: #007bff;
+            font-size: 19px;
+            cursor: pointer;
+            outline: none;
+            &:hover {
+                color: white;
+                background-color: black;
+            }
+        }
+        .buttonSign {
+            margin-left: 1em;
+            margin-top: 0.2em;
+            .btn {
+                border-radius: 30px;
+                padding: 10px 30px;
+                margin-left: 0.5em;
+                &:hover {
+                    background-color: black;
+                }
             }
         }
     }
 }
 
-.container-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c7ecff;
-    .container-home-banner {
-        margin-right: 100px;
-    }
-    .container-home-text {
-        h1 {
-            white-space: pre-line;
-            font-size: 100px;
-            font-weight: 700;
-            font-family: "Playfair Display", serif;
-        }
-        span {
-            font-family: "Yellowtail", cursive;
-            color: #2577fd;
-            font-size: 50px;
-        }
-        p {
-            font-family: "Playfair Display", serif;
-            font-style: italic;
-            font-size: 25px;
-            line-height: 1.2;
-            font-weight: 300;
-            margin-top: 1em;
-            padding-bottom: 2em;
-        }
-        a {
-            background: #2577fd;
-            color: #fff;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            letter-spacing: 1px;
-            line-height: 0;
-            padding: 14px 34px;
-            border-radius: 25px;
-            margin: 10px;
-            transition: color 0.4s linear;
-            border: 0;
-            margin: 0;
-            text-decoration: none;
-            &:hover {
-                background-color: black;
-            }
-        }
+.modal-body {
+    input {
+        margin-left: 1em;
+        outline: none;
     }
 }
