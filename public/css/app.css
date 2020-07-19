@@ -9805,6 +9805,27 @@ body {
   outline: none;
 }
 
+.modal-body input:focus {
+  border-color: dodgerblue;
+}
+
+.modal-body h1,
+.modal-body input,
+.modal-body label,
+.modal-body a {
+  font-family: "Carter One", cursive;
+}
+
+.modal-body input,
+.modal-body label,
+.modal-body a {
+  font-size: 20px;
+}
+
+.modal-body span {
+  font-weight: bold;
+}
+
 .container-home {
   display: flex;
   justify-content: center;

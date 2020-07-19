@@ -120,5 +120,22 @@ body {
     input {
         margin-left: 1em;
         outline: none;
+        &:focus {
+            border-color: dodgerblue;
+        }
+    }
+    h1,
+    input,
+    label,
+    a {
+        font-family: "Carter One", cursive;
+    }
+    input,
+    label,
+    a {
+        font-size: 20px;
+    }
+    span {
+        font-weight: bold;
     }
 }
