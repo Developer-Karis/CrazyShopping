@@ -1,0 +1,70 @@
+form {
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+.form {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    border: 2px solid white;
+}
+
+.field label {
+    font-size: 18px;
+    width: 12em;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.2s; /* don't forget to set a duration! */
+    color: greenyellow;
+}
+
+.field input {
+    font-size: 18px;
+    padding: 4px 5px 4px 5px;
+    outline: 0;
+    background: #d5d7de;
+    border: 3px solid #d5d7de;
+    border-radius: 3px;
+    width: 15em;
+
+    &:focus {
+        border: 3px solid dodgerblue;
+        transition: 1s;
+    }
+}
+
+.buttonLogIn button {
+    font-size: 18px;
+    background-color: #2fb45a;
+    width: 15em;
+    color: white;
+    margin-top: 0.5em;
+}
+
+.buttonSignUp button {
+    font-size: 18px;
+    background-color: #2fb45a;
+    width: 15em;
+    color: white;
+    margin-top: 0.5em;
+}
+
+.forgot {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: deepskyblue;
+        text-decoration: none;
+    }
+}
+
+.linkSignUpNow {
+    font-size: 20px;
+    a {
+        color: lightcoral;
+        &:hover {
+            color: greenyellow;
+            text-decoration: underline;
+        }
+    }
+}

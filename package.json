@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/SEVERECLICK-dev/CrazyShopping#readme",
   "dependencies": {
+    "animate.css": "^4.1.0",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
