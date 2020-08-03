@@ -15,8 +15,18 @@ function buttonLogIn() {
 }
 
 /**
- * 
+ * Check if all input field are correct.
  */
 function buttonSignUp() {
+    let inputPasswordSignUp = document.getElementById("login-password-field");
+    let inputConfirmPasswordSignUp = document.getElementById("login-confirmPassword-field");
+    let messageError = document.getElementById("messageErrorPassword");
 
+    if (inputPasswordSignUp !== inputConfirmPasswordSignUp) {
+        messageError.innerHTML = "The password must be the same !";
+        messageError.style.color = "#007bff";
+        messageError.style.fontSize = "18px";
+        inputPasswordSignUp.style.borderColor = "orange";
+        inputConfirmPasswordSignUp.style.borderColor = "orange";
+    }
 }
